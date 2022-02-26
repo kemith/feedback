@@ -204,7 +204,7 @@ body{
                 <td><input type="radio" name="quest12" value="1">1</td>
                 </tr>
                 </table></br>
-				<input type="email" name="email" placeholder="Add Your email here"></br>
+				
                 <input type="text" name="remarks" placeholder="Additional remarks/ words of encouragement? (Optional)"></br></br>
                 <input type="submit" name="submit"  value="Submit">
               </form>
