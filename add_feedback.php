@@ -1,24 +1,6 @@
 <?php
 include('connection.php');
 if(isset($_POST['submit'])){
-	require 'phpmailer/PHPMailerAutoload.php';
-	$mail= new PHPMailer;
-	$mail->Host='smtp.gmail.com';
-	$mail->Post=587;
-	$mail->SMTPAuth='true';
-	$mail->Username='kemithl20@gmail.com';
-	$mail->Password='chenpalomith';
-	$mail->setFrom($_POST['email']);
-	$mail->addAddress('kemithl20@gmail.com');
-	$mail->isHTML(true);
-	$mail->Subject='Form Submission:You have a new feedback';
-	$mail->Body='hello ';
-	if(!mail->send()){
-		$res="sorry!!Something went wrong";
-	}
-	else{
-		$res="Successfully sent";
-	}
 		$user = $_POST['user'];
 		$quest1 = $_POST['quest1'];
 		$quest2 = $_POST['quest2'];
