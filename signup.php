@@ -27,12 +27,12 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 	<title>Login</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-</head>
-<body style="background-color: #efefef;	background-image:url('images/logo1.png');">
+	</head>
+	<body style="background-color: #efefef;	background-image:url('images/logo1.png');">
 	<div class="display1">
 	<h1>&nbsp;&nbsp; &nbsp; &nbsp; Registration Form</h1>
 	<div class="input-group" style="padding:30px 100px;">
