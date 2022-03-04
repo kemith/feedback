@@ -37,12 +37,10 @@ body{
 	echo $_SESSION['username'];
 	?></h4>
 	</center>
-	
 	<a href="dashboard.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
 	<a href="add_feedback.php"><i class="fa fa-plus-circle"></i><span>Give Feedback</span></a>
     <a href="myfeedback.php"><i class="fas fa-table"></i><span>Display Feedback</span></a>  
 	</div> 
-  
 </div>
 <!-- Side bar end -->
 		
@@ -71,10 +69,8 @@ body{
 			$sql="SELECT * FROM feedback where given_to='$id' AND status=1 ORDER BY id DESC LIMIT " .$this_page_first_result . ',' .$result_per_page;
 			$result = mysqli_query($db,$sql);
 				if($query-> num_rows > 0){?>
-				<div class="container">
-				<table align="center" border="2" style="margin-left:0%;margin-top:-2%;">
-
-			
+			<div class="container">
+			<table align="center" border="2" style="margin-left:0%;margin-top:-2%;">
 			<th>Slno</th>
 			<th>Subject Knowledge and Professionalism</th>
 			<th>Integrity and dedication to work</th>
@@ -89,8 +85,6 @@ body{
 			<th>Oratory and presentation skills</th>
 			<th>Carries out assigned task on time </th>
 			<th>Remarks</th>
-			
-			
 			<tr><?php
 				$count = 1;
 				while($row=mysqli_fetch_array($result)){
@@ -109,28 +103,21 @@ body{
 					<td><?php  echo htmlentities($row["q11"]);?></td>
 					<td><?php  echo htmlentities($row["q12"]);?></td>
 					<td><?php  echo htmlentities($row["remarks"]);?></td>
-					
-					</tr>
+				</tr>
 					<?php
-				
-				$cnt=$cnt+1;
-				}
-					
-		
-			
-		?>
-		</table></div>
+					$cnt=$cnt+1;
+					}			
+					?>
+			</table>
+		</div>
 		
 	<div class="pagination" style="margin-left:5%;margin-top:45%;position:absolute;">
 	<?php
 		for($page=1;$page<=$number_of_pages;$page++){
 			echo '<a href="myfeedback.php?page=' .$page . '" style="background-color:#f44336;display:inline-block;padding:10px 10px;">'.$page. '</a>';
-		}
-		}				
-				
+			}
+		}						
 	?>
-	
-	</div>
-							
+</div>						
 </body>
 </html>

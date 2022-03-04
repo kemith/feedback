@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,18 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-
 <style>
 body{
 	margin:0;
 	padding:0;
 	font-family:"Roboto", sans-serif;
-}
+	}
 </style>
 </head>
 <body>
 <input type="checkbox" id="check">
-
 <!-- Header area start--> 
 <header>
 	<label for="check">

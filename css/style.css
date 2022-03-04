@@ -128,7 +128,7 @@ text-align: center;
 }
 
 .sidebar{
-	background:#2F323A;
+	background:#468499;
 	margin-top:58px;
 	padding-top:30px;
 	position:fixed;
@@ -366,7 +366,7 @@ height:58px;
 }
 
 .navbar1 a:hover, .dropdown1:hover .dropbtn1 {
-background-color:#19b3d3;
+background-color:;
 }
 
 .dropdown-content1 {
@@ -491,7 +491,7 @@ font-family: "Times New Roman", Times, serif;
 
  table {
   border-collapse: collapse;
-  width: 98%;
+  width: 100%;
   margin-left: 1%;
 }
 
@@ -521,7 +521,7 @@ input  {
 }
 input[type=submit]{
   width: 98%;
-  background-color: 	#4a8cff;
+  background-color: #4a8cff;
   color: white;
   padding: 14px 20px;
   margin-left:1%;
@@ -529,7 +529,14 @@ input[type=submit]{
   border-radius: 4px;
   cursor: pointer;
 }
+
+input[type="radio"]{
+	width:30px;
+	height:30px;
+	cursor:pointer;
+}
+
 .scrollbar{
+	overflow:hidden;
 	overflow-y:scroll;
-	overflow-x:hidden;
 }
